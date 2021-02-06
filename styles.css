@@ -129,15 +129,19 @@ h4 {
 #skills h3 {
     text-align: center;
 }
+
 #skills ul {
     margin: 40px 0;
+
 }
 #skills li {
-    text-align: center;
+    text-align: right;
     grid-column: span 2;
+
 }
 #skills i {
     font-size: 2em;
+    
 }
 #contact {
     padding: 30px 20px;
@@ -177,6 +181,21 @@ footer .copyright {
     }
     .welcome-img img {
         width: 100%;
+    }
+    .projects a {
+        grid-column: span 4;
+        display: block;
+        margin: 20px 0;
+    }
+    .projects a:last-child {
+        grid-column: 3/7;
+    }
+    .projects a * {
+        margin: 10px 20%;
+        max-width: 60%;
+    }
+    .projects h4 {
+        text-align: center;
     }
 }
 
