@@ -131,14 +131,14 @@ h4 {
 }
 
 #skills ul {
-    margin: 40px 0;
+    margin: 40px auto;
 
 }
-#skills li {
-    text-align: right;
+#skills li{
     grid-column: span 2;
-
+    text-align: right;
 }
+
 #skills i {
     font-size: 2em;
     
@@ -201,7 +201,23 @@ footer .copyright {
 
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px) {
-
+    .grid {
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto; 
+    }
+    .site-nav {
+        padding: 0 20px;
+    }
+    .site-nav ul {
+        display: flex;
+        grid-column: 6/9;
+        justify-content: flex-end;
+        
+    }
+    .site-nav li {
+        margin-left: 20px;
+    }
 }
 
 /* Desktop styles */ 
